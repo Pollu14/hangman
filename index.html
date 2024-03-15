@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Hangman Game by Montoneri Alessandro</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="icon" href="assets/img/favicon.png" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="hang-container">
+        <div class="hangman-game"></div>
+        <div class="wrongLetters"><h3>Lettere Errate:</h3></div>
+        <div class="keyboard-display">
+          <div class="qwerty"></div>
+          <div class="asdfg"></div>
+          <div class="zxcvb"></div>
+        </div>
+      </div>
+      <div class="hangman-display">
+        <div class="hangman-fork">
+          <img class="fork" src="assets/img/hangmanfork.png" />
+          <div class="hangman-img1 inactive">
+            <img src="assets/img/hangmanhead.png" />
+          </div>
+          <div class="hangman-img2 inactive">
+            <img src="assets/img/hangmantorso.png" />
+          </div>
+          <div class="hangman-img3 inactive">
+            <img src="assets/img/hangmanrighthand.png" />
+          </div>
+          <div class="hangman-img4 inactive">
+            <img src="assets/img/hangmanlefthand.png" />
+          </div>
+          <div class="hangman-img5 inactive">
+            <img src="assets/img/hangmanrightleg.png" />
+          </div>
+          <div class="hangman-img6 inactive">
+            <img src="assets/img/hangmanrightleg.png" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <audio id="rightAudio" src="assets/audio/rightanswer.m4a"></audio>
+    <audio id="wrongAudio" src="assets/audio/error.m4a"></audio>
+    <audio id="winAudio" src="assets/audio/win.m4a"></audio>
+    <audio id="loseAudio" src="assets/audio/lostmatch.m4a"></audio>
+    <script src="assets/js/script.js" async defer></script>
+  </body>
+</html>
